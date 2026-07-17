@@ -1,1 +1,1 @@
-* sort least/most recenet may remove tabs from a group
+* close unused tabs (tabs that have not been active for a certain amount of time)
