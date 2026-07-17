@@ -1,5 +1,5 @@
 async function groupBySite() {
-    if(document.querySelector("#btncheck1").checked){
+    if(document.querySelector("#apply-all-windows").checked){
         await groupBySiteAllWindows();
     } else {
         const tabs = await chrome.tabs.query({currentWindow: true});

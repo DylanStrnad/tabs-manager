@@ -3,7 +3,7 @@ async function collapseGroups(){
     //check if tabs exist
     const windowId = tabs.length > 0 ? tabs[0].windowId : undefined;
     let groups = await chrome.tabGroups.query({windowId});
-    if(document.querySelector("#btncheck1").checked){
+    if(document.querySelector("#apply-all-windows").checked){
         groups = await chrome.tabGroups.query({});
     }
     const updatePromises = groups.map(g =>
@@ -18,7 +18,7 @@ async function expandGroups(){
     //check if tabs exist
     const windowId = tabs.length > 0 ? tabs[0].windowId : undefined;
     let groups = await chrome.tabGroups.query({windowId});
-    if(document.querySelector("#btncheck1").checked){
+    if(document.querySelector("#apply-all-windows").checked){
         groups = await chrome.tabGroups.query({});
     }
     const updatePromises = groups.map(g =>

@@ -1,6 +1,6 @@
 async function ungroupTabs(){
     // apply to all windows if checked
-    if(document.querySelector("#btncheck1").checked){
+    if(document.querySelector("#apply-all-windows").checked){
         await ungroupTabsAllWindows();
     } else {
         const tabs = await chrome.tabs.query({currentWindow: true});

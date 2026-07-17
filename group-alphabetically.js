@@ -1,5 +1,5 @@
 async function groupAlphabetically() {
-    if(document.querySelector("#btncheck1").checked){
+    if(document.querySelector("#apply-all-windows").checked){
         await groupAlphabeticallyAllWindows();
     } else {
         const tabs = await chrome.tabs.query({currentWindow: true}); //only apply to current window

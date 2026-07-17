@@ -1,1 +1,1 @@
-* expand/collapse groups button
+* sort least/most recenet may remove tabs from a group

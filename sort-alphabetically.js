@@ -4,7 +4,7 @@ button.addEventListener("click", async () => {
   let tabs = await chrome.tabs.query({currentWindow: true});
   const windowId = tabs.length > 0 ? tabs[0].windowId : undefined;
   let groups = await chrome.tabGroups.query({windowId});
-  if(document.querySelector("#btncheck1").checked){
+  if(document.querySelector("#apply-all-windows").checked){
     tabs = await chrome.tabs.query({});
     groups = await chrome.tabGroups.query({});
   }
