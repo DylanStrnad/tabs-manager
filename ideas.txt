@@ -1,1 +1,6 @@
-* close unused tabs (tabs that have not been active for a certain amount of time)
+* Restore recently closed tabs(select time)
+* display tab history (maybe make into a new pop up window)
+* mute/unmute all tabs
+* custom buttons(can assign button a certain action. e.g. group tabs, ungroup tabs, etc.)
+* select color scheme
+* keyboard shortcuts to access features
