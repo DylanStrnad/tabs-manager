@@ -43,7 +43,7 @@
     <div class="btn-group d-flex" role="group" aria-label="Basic outlined example" style="padding: 1em;">
       <button id="close-inactive" class="btn btn-primary btn-sm" style="margin: 0.1em; background-color: #132dab;">Close Inactive Tabs</button>
        <select id="inactive-time" class="form-select form-select-sm w-auto" style="background-color: #8e9ce2; color: white; border: 1px solid #3b5de7; margin: 0.1em;">
-          <option selected>select range</option>
+          <option selected>Last Active</option>
           <option value="5">5+min</option>
           <option value="15">15+min</option>
           <option value="30">30+min</option>
@@ -52,6 +52,36 @@
           <option value="240">4+hours</option>
           <option value="480">8+hours</option>
           <option value="1440">24+hours</option>
+        </select>
+    </div>
+
+    <div class="btn-group d-flex" role="group" aria-label="Basic outlined example" style="padding: 1em;">
+      <button id="restore-tabs" class="btn btn-primary btn-sm" style="margin: 0.1em; background-color: #132dab;">Restore Tabs</button>
+       <select id="time-tab-closed" class="form-select form-select-sm w-auto" style="background-color: #8e9ce2; color: white; border: 1px solid #3b5de7; margin: 0.1em;">
+          <option selected>Last Closed</option>
+          <option value="5">&lt 5min </option>
+          <option value="15">&lt 15 min</option>
+          <option value="30">&lt 30 min</option>
+          <option value="60">&lt 1 hour</option>
+          <option value="120">&lt 2 hours</option>
+          <option value="240">&lt 4 hours</option>
+          <option value="480">&lt 8 hours</option>
+          <option value="1440">&lt 24 hours</option>
+        </select>
+    </div>
+
+     <div class="btn-group d-flex" role="group" aria-label="Basic outlined example" style="padding: 1em;">
+      <button id="restore-windows" class="btn btn-primary btn-sm" style="margin: 0.1em; background-color: #132dab;">Restore Windows</button>
+       <select id="time-window-closed" class="form-select form-select-sm w-auto" style="background-color: #8e9ce2; color: white; border: 1px solid #3b5de7; margin: 0.1em;">
+          <option selected>Last Closed</option>
+          <option value="5">&lt 5min </option>
+          <option value="15">&lt 15 min</option>
+          <option value="30">&lt 30 min</option>
+          <option value="60">&lt 1 hour</option>
+          <option value="120">&lt 2 hours</option>
+          <option value="240">&lt 4 hours</option>
+          <option value="480">&lt 8 hours</option>
+          <option value="1440">&lt 24 hours</option>
         </select>
     </div>
 
@@ -72,4 +102,6 @@
     <script src="./src/scripts/group-by-site.js" type="module"></script>
     <script src="./src/scripts/expand-collapse-groups.js" type="module"></script>
     <script src="./src/scripts/close-inactive.js" type="module"></script>
+    <script src="./src/scripts/restore-tabs.js" type="module"></script>
+    <script src="./src/scripts/background.js" type="module"></script>
 </html>

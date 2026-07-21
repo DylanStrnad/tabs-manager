@@ -4,3 +4,5 @@
 * custom buttons(can assign button a certain action. e.g. group tabs, ungroup tabs, etc.)
 * select color scheme
 * keyboard shortcuts to access features
+
+*AI feature that tracks most used websites, and allows user to open all these sites in a click of a button
